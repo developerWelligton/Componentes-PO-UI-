@@ -8,7 +8,7 @@ import {
   PoTableComponent,
   PoNotificationService
 } from '@po-ui/ng-components';
-import { SamplePoTableAirfareService } from '../service/sample-po-table-airfare.service';
+import { SamplePoTableAirfareService } from './service/sample-po-table-airfare.service';
 
 
 @Component({
