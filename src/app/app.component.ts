@@ -18,7 +18,11 @@ export class AppComponent {
       ]
     },
     {label: 'Dynamic', link: 'dynamic/form', icon: 'po-icon-user', shortLabel: 'Dynamic'},
-    {label: 'Step', link: 'step/step', icon: 'po-icon-user', shortLabel: 'Step'}
+    { label: 'Stepper', shortLabel: 'Step', icon: 'po-icon-table', subItems: [
+      {label: 'Stepper Basic', shortLabel: 'Single', link: 'step/step', icon: 'po-icon-star' },
+      {label: 'Stepper Sales', shortLabel: 'Single', link: 'step/stepsales', icon: 'po-icon-star' },
+      ]
+    },
   ];
 
 }
