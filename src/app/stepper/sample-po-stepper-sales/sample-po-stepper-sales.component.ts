@@ -1,8 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
-import { PoModalComponent, PoStepComponent, PoStepperComponent, PoStepperOrientation } from '@po-ui/ng-components';
-import { of } from 'rxjs';
+import { PoModalComponent, PoNotificationService, PoStepComponent, PoStepperComponent, PoStepperOrientation } from '@po-ui/ng-components';
+import { Observable, of } from 'rxjs';
 import { delay, finalize, map, tap } from 'rxjs/operators';
 
 @Component({
@@ -30,15 +30,18 @@ export class SamplePoStepperSalesComponent {
   nextLabelWidget: string = 'Next Step';
   previousLabelWidget: string = 'Previous Step';
 
-  constructor() {
+  constructor(private poNotification: PoNotificationService) {
     this.address = this.getAddress();
   }
 
-  canActiveFinishStep(paymentForm: NgForm) {
+  canActiveFinishStep(paymentForm: NgForm): Observable<boolean> {
     return of(paymentForm.form.valid).pipe(
       tap(() => (this.isLoadingPayment = true)),
       delay(2000),
-      finalize(() => (this.isLoadingPayment = false))
+      finalize(() => {
+        this.isLoadingPayment = false;
+        this.poNotification.success('Pagamento concluído com sucesso!');
+      })
     );
   }
 
