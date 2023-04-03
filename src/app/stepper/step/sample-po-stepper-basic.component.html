@@ -1,8 +1,59 @@
 <po-page-default p-title="Simple">
-  <po-stepper>
-    <po-step p-label="Step 1"></po-step>
-    <po-step p-label="Step 2"></po-step>
-    <po-step p-label="Step 3"></po-step>
+  <po-stepper  #stepper>
+    <po-step p-label="Step 1">
+      <po-widget
+      class="po-md-12"
+      p-title="Purchase"
+      [p-primary-label]="previousLabelWidget"
+      [p-secondary-label]="nextLabelWidget"
+      (p-primary-action)="stepper.previous()"
+      (p-secondary-action)="stepper.next()"
+    >
+      <form #addressForm="ngForm">
+      </form>
+    </po-widget>
+    </po-step>
+    <po-step p-label="Step 2">
+      <po-widget
+      class="po-md-12"
+      p-title="Purchase"
+      [p-primary-label]="previousLabelWidget"
+      [p-secondary-label]="nextLabelWidget"
+      (p-primary-action)="stepper.previous()"
+      (p-secondary-action)="stepper.next()"
+      >
+      <form #addressForm="ngForm">
+      </form>
+    </po-widget>
+
+    </po-step>
+
+    <po-step p-label="Finish">
+      <po-widget
+        class="po-md-12"
+        [p-primary-label]="previousLabelWidget"
+        [p-secondary-label]="confirmLabelWidget"
+        p-title="Purchase"
+        (p-primary-action)="stepper.previous()"
+        (p-secondary-action)="onConfirmStep(stepper)"
+      >
+        <hr />
+        <div class="po-row">
+          <po-info class="po-md-4" p-label="Product" p-value="Nike XYZ - Red/Gold Stripes"> </po-info>
+          <po-info class="po-md-2" p-label="Price" p-value="$2.500,00"> </po-info>
+          <po-info class="po-md-2" p-label="Discount" p-value="$500,00"> </po-info>
+          <po-info class="po-md-2" p-label="Tax" p-value="$160,00"> </po-info>
+          <po-info class="po-md-2" p-label="Final Price" p-value="$2.160,00"> </po-info>
+        </div>
+      </po-widget>
+    </po-step>
   </po-stepper>
+
+  <po-modal #successData p-title="Informations">
+    <div class="po-row">
+      <img class="po-offset-md-6 po-offset-xl-3" src="../../../assets/graphics/check.jpg" width="350" height="350" />
+      <p class="po-offset-md-8 po-offset-xl-3 po-font-title">Success! ORDER NUMBER: 5767686678609-XPTOA</p>
+    </div>
+  </po-modal>
 </po-page-default>
 
