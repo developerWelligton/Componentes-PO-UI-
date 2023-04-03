@@ -23,6 +23,11 @@ export class AppComponent {
       {label: 'Stepper Sales', shortLabel: 'Single', link: 'step/stepsales', icon: 'po-icon-star' },
       ]
     },
+    { label: 'List View', shortLabel: 'List View', icon: 'po-icon-table', subItems: [
+      {label: 'List View', shortLabel: 'Single', link: 'listview/listviewbasic', icon: 'po-icon-star' },
+
+      ]
+    },
   ];
 
 }
