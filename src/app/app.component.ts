@@ -14,7 +14,9 @@ export class AppComponent {
     { label: 'Table', shortLabel: 'Table', icon: 'po-icon-table', subItems: [
       {label: 'Simple', shortLabel: 'Single', link: 'table/simple', icon: 'po-icon-star' },
       {label: 'Service', shortLabel: 'Service', link: 'table/service', icon: 'po-icon-star-filled'},
-      {label: 'Airfare', shortLabel: 'Airfare', link: 'table/airfare', icon: 'po-icon-star-filled'}
+      {label: 'Airfare', shortLabel: 'Airfare', link: 'table/airfare', icon: 'po-icon-star-filled'},
+      {label: 'Table Heroes', shortLabel: 'Table Heroes', link: 'table/sampletableheroes', icon: 'po-icon-star-filled'},
+
       ]
     },
     {label: 'Dynamic', link: 'dynamic/form', icon: 'po-icon-user', shortLabel: 'Dynamic'},

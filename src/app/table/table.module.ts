@@ -6,13 +6,15 @@ import { SimpleComponent } from './simple/simple.component';
 import { ServiceComponent } from './service/service.component';
 import { PoModule } from '@po-ui/ng-components';
 import { SamplePoTableAirfareComponent } from './airfare/sample-po-table-airfare.component';
+import { SamplePoTableHeroesComponent } from './sample-po-table-heroes/sample-po-table-heroes.component';
 
 
 @NgModule({
   declarations: [
     SimpleComponent,
     ServiceComponent,
-    SamplePoTableAirfareComponent
+    SamplePoTableAirfareComponent,
+    SamplePoTableHeroesComponent
   ],
   imports: [
     CommonModule,
