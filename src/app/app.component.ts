@@ -25,7 +25,7 @@ export class AppComponent {
     },
     { label: 'List View', shortLabel: 'List View', icon: 'po-icon-table', subItems: [
       {label: 'List View', shortLabel: 'Single', link: 'listview/listviewbasic', icon: 'po-icon-star' },
-
+      {label: 'List View', shortLabel: 'Single', link: 'listview/hiringprocesses', icon: 'po-icon-star' },
       ]
     },
   ];
