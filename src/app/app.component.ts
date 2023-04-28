@@ -30,6 +30,11 @@ export class AppComponent {
       {label: 'List View', shortLabel: 'Single', link: 'listview/hiringprocesses', icon: 'po-icon-star' },
       ]
     },
+    { label: 'Checkbox', shortLabel: 'Checkbox', icon: 'po-icon-table', subItems: [
+      {label: 'Checkbox Basic', shortLabel: 'Checkbox', link: 'checkbox/checkboxBasic', icon: 'po-icon-star' },
+      ]
+    },
+
   ];
 
 }
