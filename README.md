@@ -9,15 +9,15 @@ Execute `ng serve` para subir o servidor de desenvolvimento. Navegue para `http:
 $ ng g m checkbox
 ng g c checkbox/sample-po-checkbox-basic
 add routing: checkbox-routing.module.ts
-
+ 
 padrão
-<po-page-default p-title="Simple"> 
+<po-page-default p-title="Simple"> *********
 </po-page-default>
 
 no module add 
  imports: [
     CommonModule,
-    PoModule,
+    PoModule, ******************
     PoInfoModule
   ]
 
@@ -64,6 +64,10 @@ adicionar uma nova na rota raiz
     aqui  
     {label: 'Checkbox Acceptance Term', shortLabel: 'Acceptance Term', link: 'checkbox/checkAcceptanceTerm', icon: 'po-icon-star' },  
     
-  
+  --------------------------------------------------------------------------
 
+
+tree view 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+BrowserAnimationsModule
 
