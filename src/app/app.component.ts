@@ -56,6 +56,13 @@ export class AppComponent {
           {label: 'PO Chart Coffee Ranking', shortLabel: 'Chart Coffee', link: 'chart/chartCoffeeRanking', icon: 'po-icon-star'},
         ]
     },
+
+    { label: 'Dropdown', shortLabel: 'Dropdown', icon: 'po-icon-table',
+      subItems: [
+          {label: 'PO Dropdown Basic', shortLabel: 'Dropdown Basic', link: 'dropdown/dropdownBasic', icon: 'po-icon-star'},
+
+        ]
+    },
   ];
 
 }
