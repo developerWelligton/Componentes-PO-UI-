@@ -53,7 +53,8 @@ export class AppComponent {
     { label: 'Chart', shortLabel: 'Chart', icon: 'po-icon-table',
       subItems: [
           {label: 'PO Chart Basic', shortLabel: 'Chart Basic', link: 'chart/chartBasic', icon: 'po-icon-star'},
-          ]
+          {label: 'PO Chart Coffee Ranking', shortLabel: 'Chart Coffee', link: 'chart/chartCoffeeRanking', icon: 'po-icon-star'},
+        ]
     },
   ];
 

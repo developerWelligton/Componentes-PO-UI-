@@ -42,6 +42,10 @@ CheckboxRoutingModule
 create a new component dentro module ready created
 ng g c checkbox/sample-po-checkbox-acceptance-term
 
+padrão
+<po-page-default p-title="Simple">  
+</po-page-default>
+
 put logic component
 
 to import component lack PO UI so import them dentro do module
