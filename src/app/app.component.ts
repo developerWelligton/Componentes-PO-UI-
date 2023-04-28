@@ -49,6 +49,12 @@ export class AppComponent {
           {label: 'Tree View Folder Structure', shortLabel: 'Folder Structure', link: 'treeview/treeViewFolderStructure', icon: 'po-icon-star'},
           ]
     },
+
+    { label: 'Chart', shortLabel: 'Chart', icon: 'po-icon-table',
+      subItems: [
+          {label: 'PO Chart Basic', shortLabel: 'Chart Basic', link: 'chart/chartBasic', icon: 'po-icon-star'},
+          ]
+    },
   ];
 
 }

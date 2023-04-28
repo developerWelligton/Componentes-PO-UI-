@@ -10,6 +10,7 @@ const routes: Routes = [
   {path: 'listview', loadChildren: () => import('./ListView/listview.module').then(m => m.ListViewModule)},
   {path: 'checkbox', loadChildren:() => import('./checkbox/checkbox.module').then(m => m.CheckboxModule)},
   {path: 'treeview', loadChildren:() => import('./tree-view/tree-view.module').then(m => m.TreeViewModule)},
+  {path: 'chart', loadChildren:() => import('./chart/chart.module').then(m => m.ChartModule)},
   {path: '', redirectTo: 'home', pathMatch: 'full'}
 ];
 
