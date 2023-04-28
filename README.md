@@ -5,7 +5,7 @@ Este projeto foi criado com [Angular CLI](https://github.com/angular/angular-cli
 ## Development server
 
 Execute `ng serve` para subir o servidor de desenvolvimento. Navegue para `http://localhost:4200/`.
-
+-------------------------------------------------------------------------------
 $ ng g m checkbox
 ng g c checkbox/sample-po-checkbox-basic
 add routing: checkbox-routing.module.ts
@@ -37,3 +37,33 @@ dont forget add module in the file created
 
 add in your module
 CheckboxRoutingModule
+-----------------------------------------------------------------------------------------
+
+create a new component dentro module ready created
+ng g c checkbox/sample-po-checkbox-acceptance-term
+
+put logic component
+
+to import component lack PO UI so import them dentro do module
+  PoCheckboxGroupModule
+  
+after
+add inside component router
+
+  { path: 'checkAcceptanceTerm', component: SamplePoCheckboxAcceptanceTermComponent},
+
+lazy load já foi carregado entao nao precisa se preocupar
+
+adicionar uma nova na rota raiz
+
+{ label: 'Checkbox', shortLabel: 'Checkbox', icon: 'po-icon-table', subItems: [
+      {label: 'Checkbox Basic', shortLabel: 'Checkbox', link: 'checkbox/checkboxBasic', icon: 'po-icon-star' },
+      ]
+    },
+
+    aqui  
+    {label: 'Checkbox Acceptance Term', shortLabel: 'Acceptance Term', link: 'checkbox/checkAcceptanceTerm', icon: 'po-icon-star' },  
+    
+  
+
+

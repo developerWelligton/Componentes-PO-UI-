@@ -32,7 +32,8 @@ export class AppComponent {
     },
     { label: 'Checkbox', shortLabel: 'Checkbox', icon: 'po-icon-table', subItems: [
       {label: 'Checkbox Basic', shortLabel: 'Checkbox', link: 'checkbox/checkboxBasic', icon: 'po-icon-star' },
-      ]
+      {label: 'Checkbox Acceptance Term', shortLabel: 'Acceptance Term', link: 'checkbox/checkAcceptanceTerm', icon: 'po-icon-star' },
+    ]
     },
 
   ];
